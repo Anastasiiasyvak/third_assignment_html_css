@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My homework</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+    <link rel="stylesheet" id="styles-id" href=""/>
+
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="header"> 
+            <header class="header">
+                <nav>
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-bars"></i>
+                      </li>
+                        <li>
+                            <p style="color: #a200ff; font-family: Courier New;">About us</p>
+                        </li>
+                        <li>
+                            <p style="color: #a200ff; font-family: Courier New;">link 2</p>
+                        </li>
+                        <li>
+                            <p style="color: #a200ff; font-family: Courier New;">Active btn</p>
+                        </li>
+                        <li>
+                          <p style="color: #a200ff; font-family: Courier New;">Important link</p>
+                        </li>
+                      <li>
+                        <p style="color: #a200ff; font-family: Courier New;">Contacts</p>
+                      </li>
+                      <li>
+                        <p style="color: #a200ff; font-family: Courier New;">Hovered btn</p>
+                      </li>
+                      
+                      <button class="secondary-button">Secondary button</button>
+                    
+                    
+                    <button class="primary-button">Primary button</button>
+                
+                    </ul>
+                </nav>
+            </header>
+            
+        </div>
+        <div class="main-concept">  
+            <div class="sidebar">  </div>
+            <div  class="info"> </div>
+        </div>
+    </div>
+    <div class="footer"> 
+
+    </div>
+
+
+    <!-- <p class="par">Paragraph</p>
+    <p id="new-par">New paragraph</p>
+    <p>Paragraph</p> -->
+
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+
+    <button onclick="updateStylesheetHref('background1.css')">Get Value1</button>
+
+    <br/>
+    <button onclick="updateStylesheetHref('bachground2.css')">Get Value2</button>
+
+    <script>
+        function updateStylesheetHref(newHref) {
+            let stylesheet = document.getElementById("styles-id");
+            if (stylesheet) {
+                stylesheet.href = newHref;
+            } else {
+                console.error("Stylesheet not found!");
+            }
+        }
+    </script>
+
+</body>
+</html>

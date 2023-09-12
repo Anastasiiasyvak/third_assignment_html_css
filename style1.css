@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* margin простір за межами рамки. Це важливо для того, як ви хочете, щоб ваш елемент виглядав, коли інші елементи знаходяться поруч. 
+Якщо відступ дорівнює нулю, інші елементи (вбудовані, зверху і знизу) будуть розміщені врівень з вашим елементом. 
+pudding простір між рамкою і вмістом, тому, якщо в елементі є текст, відступ допомагає переконатися, 
+що текст не прилягає впритул до рамки. Так само, як і у випадку з коробкою, наповненою вмістом (
+наприклад, пакунком, який ви хочете відправити), ви можете додати пінопластові прокладки, або відступи, навколо вмісту, 
+щоб він не торкався країв (межі) коробки.
+Щоб отримати нульову padding, уявіть, що ви поклали коробку в коробку, 
+де внутрішня коробка трохи менша, щоб вона ідеально помістилася. Між внутрішньою коробкою (вмістом) і зовнішньою (межею) немає простору, тому проміжок буде нульовим.
+*/
+
+.wrapper{
+    background: linear-gradient(to right, rgb(29, 221, 235), rgb(167, 48, 236));
+}
+
+.header{
+    height: 100px;
+}
+
+h1, nav, ul, li, p{
+    display: inline-flex;
+}
+
+li{
+    background:rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer; 
+    border-radius: 40px;
+}
+
+li:hover{
+    border: 3px solid rgb(0, 47, 255);
+    background: rgb(255, 255, 255);
+}
+
+li:active{
+    border-color: rgb(119, 0, 255);
+    background: rgb(23, 148, 221);
+}
+
+
+
+  .secondary-button {
+    background-color: #e39bff; 
+    color: #601a7c; 
+    border: 3px solid #e39bff; 
+    border-radius: 40px; 
+    cursor: pointer; 
+    margin-left: 350px;
+    margin-top: 20px;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center; 
+    line-height: 40px; 
+}
+
+
+.secondary-button:hover {
+    background-color: #45d2f5; 
+}
+
+.secondary-button:active {
+    background-color: #406fb1; 
+}
+
+.primary-button {
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: 1px solid #81beff; 
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 40px; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    cursor: pointer; 
+}
+
+.primary-button:hover {
+    background-color: #1c68b9; 
+}
+
+.primary-button:active {
+    background-color: #032d68; 
+}
